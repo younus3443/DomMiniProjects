@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="flex flex-col items-center gap-12 mt-16">
+
+    <h1 class="text-3xl font-bold">Stepper</h1>
+
+    <!-- stepper -->
+    <div class="relative flex justify-between items-center w-[700px]">
+
+        <!-- base line -->
+        <div class="absolute top-4 left-0 w-full h-1 bg-gray-300"></div>
+
+        <!-- progress line -->
+        <div class="progress absolute top-4 left-0 h-1 bg-green-500 w-0 transition-all duration-300"></div>
+
+        <!-- step -->
+        <div class="c relative z-8 -ml-2 flex flex-col items-center">
+            <button class="h-9 w-9 rounded-full bg-gray-300 border-2">1</button>
+            <span class="mt-2 text-sm">Contact</span>
+        </div>
+
+        <div class="c relative z-10 flex flex-col items-center">
+            <button class="h-9 w-9 rounded-full bg-gray-300 border-2">2</button>
+            <span class="mt-2 text-sm">Shipping</span>
+        </div>
+
+        <div class="c relative z-10 flex flex-col items-center">
+            <button class="h-9 w-9 rounded-full bg-gray-300 border-2">3</button>
+            <span class="mt-2 text-sm">Payment</span>
+        </div>
+
+        <div class="c  -mr-3 relative z-10 flex flex-col items-center">
+            <button class="h-9 w-9 rounded-full bg-gray-300 border-2">4</button>
+            <span class="mt-2 text-sm">Delivered</span>
+        </div>
+
+    </div>
+
+    <p class="text-xl font-semibold">Add contact details for further communications.</p>
+
+    <div class="flex gap-4">
+        <button class="b1 px-6 py-2 bg-blue-500 text-white rounded-lg">Previous</button>
+        <button class="b2 px-6 py-2 bg-blue-500 text-white rounded-lg">Next</button>
+    </div>
+
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
