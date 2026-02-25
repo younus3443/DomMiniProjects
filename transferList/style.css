@@ -1,0 +1,40 @@
+.main{
+    display: flex;
+    justify-content: center;
+    width:80%;
+    margin-left: 10%;
+    border: 2px solid black;
+}
+.left{
+    margin-right: 20%;
+}
+.left > .list{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+}
+.right > .list{
+    display: flex;
+    flex-direction: row;
+    gap:10px
+
+}
+h1{
+    margin-left: 45%;
+    margin-bottom:5%
+}
+.right{
+    margin-left: 20%;
+
+}
+.btns{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    height:auto;
+    gap:50px;
+    padding-left: 2%;
+    padding-right: 2%;
+    border-left:3px solid rgb(99, 92, 92);
+    border-right:3px solid rgb(99, 92, 92)
+}

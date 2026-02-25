@@ -1,0 +1,68 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.line{
+    height:10px;
+    width:60%;
+    background-color: #ccc;
+    position: relative;
+    margin-top:50px
+
+}
+.btns{
+    display: flex;
+    justify-content: space-between;
+    z-index: 2;
+    position: relative;
+}
+.b{
+    height:40px;
+    width:40px;
+    background-color: #f4f4f4;
+    border-radius: 50%;
+    margin-top:-15px;
+    margin-left:-5px
+}
+
+.bottom-btns{
+    margin-top:2rem;
+}
+.bottom-btns > button{
+    height:40px;
+    width:100px;
+    background-color:blue;
+    color: white;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+p{
+    margin-top: 5rem ;
+    font-size: 2rem;
+    font: bold;
+}
+.btns button.completed{
+    background-color: green;
+}
+.btns button.active{
+    background-color: blue;
+}
+
+.progress{
+    transition: 0.3s;
+    background-color: rgb(98, 168, 98);
+    height:100%;
+    position: absolute;
+    width:0%;
+    z-index: 1;
+}
+.next:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+.previous:disabled{
+    background-color: #ccc;
+    cursor: not-allowed;
+
+}
