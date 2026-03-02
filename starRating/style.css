@@ -1,0 +1,20 @@
+.rating {
+    font-size: 40px;
+    cursor: pointer;
+    
+}
+
+.star {
+    color: #ccc;
+    transition: color 0.2s;
+}
+
+.star.active {
+    color: gold;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
