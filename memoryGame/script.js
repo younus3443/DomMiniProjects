@@ -7,6 +7,8 @@ let secondcard = null
 let pairs=0
 let lockcard=false
 let count=0
+let startTime = null
+let endTime = null
 
 cards.forEach((card)=>{
     card.addEventListener("click",()=>{
@@ -17,6 +19,9 @@ cards.forEach((card)=>{
     card.classList.add("flipped")
 
     if(!firstCard){
+        if (!startTime) {
+        startTime = new Date()
+        }
         firstCard=card
         count++
         moves.textContent="Total moves: "+count
@@ -42,9 +47,17 @@ function checkMatch(){
         pairs++
         resetBoard()
 
-        if(pairs==cards.length/2){
-            alert("Congraatulations you won")
-        }
+        if (pairs === cards.length / 2) {
+
+        endTime = new Date()
+
+        const totalSeconds = Math.floor((endTime - startTime) / 1000)
+
+        const minutes = Math.floor(totalSeconds / 60)
+        const seconds = totalSeconds % 60
+
+        alert(`🎉 You won in ${minutes}m ${seconds}s`)
+}
         
     }else{
         lockcard=true
